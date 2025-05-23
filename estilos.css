@@ -1,4 +1,3 @@
-/* Estilos Base - Tema Sakura */
 :root {
     --sakura-pink: #f8c3cd;
     --sakura-dark-pink: #e8a3b5;
@@ -67,7 +66,7 @@ h1, h2, h3, h4 {
     animation: falling linear infinite;
 }
 
-/* Crear 10 pétalos con diferentes posiciones y animaciones */
+
 .sakura-petal:nth-child(1) {
     left: 10%;
     top: -10%;
@@ -219,7 +218,7 @@ h1, h2, h3, h4 {
     cursor: pointer;
 }
 
-/* Hero Section */
+
 .sakura-hero {
     min-height: 100vh;
     display: flex;
@@ -404,7 +403,7 @@ h1, h2, h3, h4 {
     animation: scroll 2s infinite;
 }
 
-/* Secciones Comunes */
+
 .section-header {
     text-align: center;
     margin-bottom: 80px;
@@ -428,7 +427,7 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 300px;
+    width: 900px;
 }
 
 .divider-line {
@@ -444,7 +443,7 @@ h1, h2, h3, h4 {
     animation: spin 8s linear infinite;
 }
 
-/* Sobre Mí */
+
 .sakura-about {
     padding: 120px 5%;
     position: relative;
@@ -913,13 +912,15 @@ h1, h2, h3, h4 {
 .sakura-contact {
     padding: 120px 5%;
     position: relative;
+    top: 600px;
 }
 
 .contact-container {
     display: flex;
     gap: 50px;
-    max-width: 1200px;
+    max-width: 2400px;
     margin: 0 auto;
+
 }
 
 .contact-info {
@@ -931,6 +932,7 @@ h1, h2, h3, h4 {
     font-size: 2rem;
     color: var(--sakura-pink);
     margin-bottom: 20px;
+
 }
 
 .contact-info p {
@@ -1004,11 +1006,12 @@ h1, h2, h3, h4 {
     min-height: 150px;
 }
 
-/* Footer */
+
 .sakura-footer {
     padding: 50px 5% 20px;
     background-color: white;
     border-top: 1px solid rgba(248, 195, 205, 0.5);
+
 }
 
 .footer-content {
@@ -1064,7 +1067,7 @@ h1, h2, h3, h4 {
     color: var(--sakura-pink);
 }
 
-/* Animaciones */
+
 @keyframes falling {
     0% {
         transform: translate(0, -100px) rotate(0deg);
@@ -1221,5 +1224,31 @@ h1, h2, h3, h4 {
     
     .experience-card {
         padding: 25px;
+    }
+
+    .project-decoration {
+        width: 30%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        top: 0px;
+        position: relative;
+    }
+    
+    .hover-video {
+        width: 10%;
+        display: block;
+        cursor: pointer;
+        background: #000; 
+    }
+    
+ 
+    .hover-video::-webkit-media-controls-panel {
+        background: rgba(0,0,0,0.5);
+    }
+    
+    .hover-video::-webkit-media-controls-play-button,
+    .hover-video::-webkit-media-controls-volume-slider {
+        filter: brightness(1.5);
     }
 }
